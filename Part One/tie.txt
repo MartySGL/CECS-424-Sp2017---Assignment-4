@@ -1,0 +1,2 @@
+consult('tie.pl').
+solve.

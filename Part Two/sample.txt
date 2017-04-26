@@ -1,0 +1,96 @@
+?- start.
+
+Enter commands using standard Prolog syntax.
+Available commands are:
+start.                   -- to start the game.
+n.  s.  e.  w.  u.  d.   -- to go in that direction.
+take(Object).            -- to pick up an object.
+drop(Object).            -- to put down an object.
+kill.                    -- to attack an enemy.
+look.                    -- to look around you again.
+instructions.            -- to see this message again.
+story.            -- to see the story.
+halt.                    -- to end the game and quit.
+
+
+A month ago the zombie apocalypse began.
+Locked in your house since the beginning of it
+you are now out of food.
+Its the first time you are going outside since
+the beginning of the apocalypse.
+Be careful!
+
+You are in the house.  To the north is street.
+The kitchen is east. Your bedroom is upstair
+
+
+true.
+
+?- e.
+You are in the kitchen.
+
+There is a key here.
+
+true.
+
+?- take(key).
+OK.
+true.
+
+?- w.
+You are in the house.  To the north is street.
+The kitchen is east. Your bedroom is upstair
+
+
+true.
+
+?- u.
+You are in the bedroom.
+There is a bed and a closet (to the north)
+
+
+true.
+
+?- n.
+This is where you put your clothes and other stuff.
+
+There is a gun here.
+
+true.
+
+?- take(gun).
+OK.
+true.
+
+?- s.
+You are in the bedroom.
+There is a bed and a closet (to the north)
+
+
+true.
+
+?- d.
+You are in the house.  To the north is street.
+The kitchen is east. Your bedroom is upstair
+
+
+true.
+
+?- n.
+You are in the street. There is a zombie 100ft in front of you!
+
+
+true.
+
+?- n.
+You are in front of the zombie.
+
+
+true.
+
+?- kill.
+You just shot the zombie in the head.
+The zombie fall on the ground.
+You are now continuing on your journey to find more supplies.
+You finished the game! Please enter the   halt.   command.
+?- halt.
